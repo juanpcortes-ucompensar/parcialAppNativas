@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CentralActivity"
+    android:background="@color/bluedark">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="100dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/iv_logo_registro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mainlogo" />
+
+        <TextView
+            android:id="@+id/tv_user_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/centralName"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+        <!--Button con el mensaje de bienvenida a la App-->
+
+        <EditText
+            android:id="@+id/et_weight"
+            style="@style/EditTextRounded"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/hintWeight"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_condition"
+            style="@style/EditTextRounded"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/hintCondition"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_time"
+            style="@style/EditTextRounded"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/hintTime"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_objetive"
+            style="@style/EditTextRounded"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/hintObjetive"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/bt_calc"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:padding="1dp"
+            android:text="@string/calc"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:cornerRadius="30dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+    </LinearLayout>
+
+</ScrollView>
